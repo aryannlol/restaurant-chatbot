@@ -1,0 +1,148 @@
+/* General body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Chatbot container */
+.chatbot-container {
+  width: 100%;
+  max-width: 420px;
+  height: 90%;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header styling */
+.chat-header {
+  background: #6200ea;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Chat box styling */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f9f9f9;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+
+.chat-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  max-width: 80%;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.chat-message.bot {
+  align-self: flex-start;
+}
+
+.chat-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.chat-avatar.user {
+  background-color: #6200ea;
+}
+
+.chat-avatar.bot {
+  background-color: #ff5722;
+}
+
+/* Chat bubble styling */
+.chat-bubble {
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+  background-color: #6200ea;
+  color: #fff;
+}
+
+.chat-bubble.bot {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Input container styling */
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+#send-button {
+  background-color: #6200ea;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+#send-button img {
+  width: 20px;
+  height: 20px;
+}
+
+#send-button:hover {
+  background-color: #4e00ba;
+}
