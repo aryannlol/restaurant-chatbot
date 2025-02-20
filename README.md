@@ -28,8 +28,7 @@ npm install
 ```
 
 ### **3️⃣ Set Up API Keys**  
-- **Google Gemini API Key** – Obtain it from [Google AI](https://ai.google.dev/).  
-- **Google Maps API Key** – Get it from [Google Cloud Console](https://console.cloud.google.com/).  
+- **Google Gemini API Key** – Obtain it from [Google AI Studio]([https://ai.google.dev/](https://aistudio.google.com/prompts/new_chat)).  
 
 Create a `.env` file in the root folder and add:  
 ```env
@@ -84,6 +83,16 @@ Want to improve this chatbot? Follow these steps:
    ```
 4. **Push and create a Pull Request**  
 
+
 ---
+
+## 🛠️ Langflow Component Flow  
+
+The Langflow architecture:  
+
+![langflow component flow](https://github.com/user-attachments/assets/280e3378-b7d6-4f93-b9d5-0271371781a8)
+
+### UI
+![image](https://github.com/user-attachments/assets/899d8382-e251-4e36-a4fb-d9340d3d9d8a)
 
 
